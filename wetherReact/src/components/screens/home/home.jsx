@@ -1,30 +1,30 @@
 import { useState } from 'react'
-import {styles} from './home.module.css'
-import {wethers} from './wethers.data'
+import styles from './home.module.css'
+import {weathers} from './weathers.data'
 
 
-function home () {
+function Home () {
   const [count, setCount] = useState(0)
 
   return (
       <div>
-        <h1>Wether App React</h1>
+        <h1>Weather App React</h1>
         <div>
-          {wethers.map(globalWether => {
+          {weathers.map(globalWeather => {
             return (
               <div className={styles.item}>
-                <div key={globalWether.id} className={styles.key}></div>
+                <div key={globalWeather.id} className={styles.key}></div>
                 <div
                   className={styles.view}
                   style={{
-                    backgroundImage: `url(${globalWether.image})`
+                    backgroundImage: `url(${globalWeather.image})`
                   }}/>
-                <div className={styles.wetherInfo}>
-                  <h2>{globalWether.name}</h2>
-                  <p>{globalWether.city}</p>
-                  <link to={globalWether.wether}>
-                  <button>read more</button>
-                  </link>
+                <div className={styles.weatherInfo}>
+                  <h2>{globalWeather.name}</h2>
+                  <p>{globalWeather.city}</p>
+                  <a href={globalWeather.wether}>
+                    <button>read more</button>
+                  </a>
                 </div>
               </div>
             )})}
@@ -33,4 +33,4 @@ function home () {
   )
 }
 
-export default home
+export default Home;

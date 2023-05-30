@@ -1,15 +1,19 @@
 .item {
-    border: 2px solid white ;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
 }
 
 .view {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 400px;
     height: 200px;
 }
 
-.wetherInfo {
+.weatherInfo {
     text-align: center;
 }
+
