@@ -9,7 +9,7 @@ function Home () {
   return (
       <div>
         <h1>Weather App React</h1>
-        <div>
+        <div className={styles.container}>
           {weathers.map(globalWeather => {
             return (
               <div className={styles.item}>
@@ -23,7 +23,7 @@ function Home () {
                   <h2>{globalWeather.name}</h2>
                   <p>{globalWeather.city}</p>
                   <a href={globalWeather.wether}>
-                    <button>read more</button>
+                    <button className={styles.button}>read more</button>
                   </a>
                 </div>
               </div>
