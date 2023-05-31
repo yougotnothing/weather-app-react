@@ -22,7 +22,7 @@ function Home () {
                 <div className={styles.weatherInfo}>
                   <h2>{globalWeather.name}</h2>
                   <p>{globalWeather.city}</p>
-                  <a href={globalWeather.wether}>
+                  <a href={globalWeather.weather}>
                     <button className={styles.button}>read more</button>
                   </a>
                 </div>
