@@ -10,21 +10,18 @@ This is react app what show you a wether in a choosen city.
 
 ~~~
 yarn npm i
-~~~
-or
-~~~
+
+///
+
 npm i
 ~~~
-
 ~~~
 yarn dev
-~~~
-or
-~~~
+
+///
+
 npm dev
 ~~~
-
----
 
 #### In console you can see the localHost, copy that and paste it in your browser and finally you can run the weather react app!
 
