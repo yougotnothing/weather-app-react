@@ -9,13 +9,19 @@ This is react app what show you a wether in a choosen city.
 #### "instal dependencies"
 
 ~~~
-yarn / npm i
+yarn npm i
+~~~
+or
+~~~
+npm i
 ~~~
 
----
-
 ~~~
-yarn dev / npm dev
+yarn dev
+~~~
+or
+~~~
+npm dev
 ~~~
 
 ---
