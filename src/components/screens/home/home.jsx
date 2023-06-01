@@ -7,9 +7,9 @@ function Home () {
   const [count, setCount] = useState(0)
 
   return (
-      <div className={styles.card}>
+      <div className={styles.container}>
         <h1>Weather App React</h1>
-        <div className={styles.container}>
+        <div className={styles.gridContainer}>
           {weathers.map(globalWeather => {
             return (
               <div className={styles.item}>
