@@ -6,19 +6,13 @@ HOW TO RUN A WEATHER-REACT-APP
 
 ###
 
-RUN THE CMD:
+"INSTALL DEPENDENCIES"
+
+yarn / npm i
 
 ###
 
-cd wetherReact
-
-"CHOOSE THE FOLDER"
-
-###
-
-yarn dev
-
-"STARTS THE YARN SERVER"
+yarn dev / npm dev
 
 ###
 
