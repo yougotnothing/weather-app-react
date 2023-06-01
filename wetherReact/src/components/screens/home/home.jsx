@@ -7,7 +7,7 @@ function Home () {
   const [count, setCount] = useState(0)
 
   return (
-      <div>
+      <div className={styles.card}>
         <h1>Weather App React</h1>
         <div className={styles.container}>
           {weathers.map(globalWeather => {
