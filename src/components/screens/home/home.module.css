@@ -1,5 +1,5 @@
 .item {
-    border: 2px solid rgb(183, 255, 106);
+    border: 2px solid rgb(185, 185, 185);
     border-radius: 5px;
     width: 400px;
     height: 300px;
@@ -39,6 +39,7 @@
 
 
 .view {
+    border-radius: 5px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,7 +53,7 @@
 
 .button {
     text-decoration: none;
-    color: rgb(42, 98, 0);
+    color: rgb(85, 98, 0);
     display: inline-block;
     padding: 20px 30px;
     margin: 10px 20px;
@@ -60,7 +61,7 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, #8c9f72 0%, #5ea22e 51%, #56ba04 100%);
+    background-image: linear-gradient(to right, #9e9f72 0%, #9ca22e 51%, #9fba04 100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0, .1);
     transition: .5s;
