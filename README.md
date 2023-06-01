@@ -1,23 +1,27 @@
-# weather-app-react
+# WEATHER REACT APP
 
 This is react app what show you a wether in a choosen city.
 
-HOW TO RUN A WEATHER-REACT-APP
+## How to run the app
 
-###
+---
 
-"INSTALL DEPENDENCIES"
+#### "instal dependencies"
 
+~~~
 yarn / npm i
+~~~
 
-###
+---
 
+~~~
 yarn dev / npm dev
+~~~
 
-###
+---
 
-IN CONSOLE YOU CAN SEE THE LOCALHOST, COPY THAT AND PASTE IT IN YOUR BROWSER AND FINALLY YOU CAN RUN THE REACT-WEATHER-APP!
+#### In console you can see the localHost, copy that and paste it in your browser and finally you can run the weather react app!
 
-###
+---
 
-ENJOY!
+## Enjoy!
