@@ -1,18 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from './screens/components/home';
-import Cities from './screens/components/cities';
+import Home from "./screens/components/home";
+import NotFound from "./screens/components/notFound";
+import Cities from "./screens/components/cities";
 
 export function RouterApp() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/cities" element={<Cities />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/home" component={Home} />
+        <Route path="/cities" component={Cities} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }

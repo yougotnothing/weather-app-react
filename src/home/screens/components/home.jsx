@@ -1,17 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
 
-import styles from '../home.module.css';
-import weatherData from '../../voivodeships.json';
+import styles from "../home.module.css";
+import weatherData from "../../voivodeships.json";
 
 function Home() {
+  const history = useHistory();
+
+  const handleReadMore = (path) => {
+    console.log('start handling')
+    history.push(path);
+    console.log("end handling");
+  };
 
   return (
     <>
       <div className={styles.homeContainer}>
         <ul className={styles.homeNavbar}>
           <li>
-            <Link to="/home">home</Link>
+            <button onClick={() => handleReadMore("/home")}>
+              Home
+            </button>
           </li>
         </ul>
       </div>
@@ -24,12 +33,16 @@ function Home() {
               className={styles.crest}
               style={{
                 backgroundImage: `url(${cities.crest})`,
-              }} />
+              }}
+            />
             <div className={styles.voivodeshipInfo}>
               <h2>{cities.voivodeship}</h2>
-              <Link to="/cities" className={styles.buttonVoivodeships}>
+              <button
+                className={styles.buttonVoivodeships}
+                onClick={() => handleReadMore("/cities")}
+              >
                 read more
-              </Link>
+              </button>
             </div>
           </div>
         ))}
