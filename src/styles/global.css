@@ -4,8 +4,8 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(29, 29, 29);
-    color: rgb(243, 255, 109);
+    background-color: rgb(56, 56, 56);
+    color: rgb(189, 189, 189);
     padding: 0 20px;
     font-family: 'Roboto Mono', monospace;
-};
+}

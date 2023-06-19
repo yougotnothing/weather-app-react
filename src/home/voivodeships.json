@@ -1,34 +1,51 @@
-{  
-    "warmianVoivodship": {
-        "warsaw": {
+{
+    "masovianVoivodship": {
+        "crest": "masovian.png",
+        "voivodeship": "Masovian",
+        "cities": [
+        {
             "city": "Warsaw",
-            "voivodeship": "Warmian",
             "weather": "https://www.accuweather.com/en/pl/warsaw/274663/weather-forecast/274663",
             "image": "warsaw.jpg"
         }
+    ]
     },
     "lowerSilesianVoivodship": {
-        "wroclaw": {
+        "crest": "lowerSilesian.png",
+        "voivodeship": "Lower Silesian",
+        "cities": [
+        {
             "city": "Wroclaw",
-            "voivodeship": "lover Silesian",
             "weather": "https://www.accuweather.com/en/pl/wroc%C5%82aw/273125/weather-forecast/273125",
             "image": "wroclaw.jpg"
         }
+    ]
     },
     "pomeranianVoivodship": {
-        "Gdansk": {    
+        "crest": "pomeranian.png",
+        "voivodeship": "Pomeranian",
+        "cities": [
+        {
             "city": "Gdansk",
-            "voivodeship": "pomeranian",
             "weather": "https://www.accuweather.com/en/pl/gda%C5%84sk/275174/weather-forecast/275174",
             "image": "gdansk.jpg"
+        },
+        {
+            "city": "Gdynia",
+            "weather": "https://www.accuweather.com/en/pl/gdynia/275175/weather-forecast/275175",
+            "image": "gdynia.jpg"
         }
+    ]
     },
     "lodzVoivodship": {
-        "Lodz": {    
+        "crest": "lodzVoivodeship.png",
+        "voivodeship": "Łódź",
+        "cities": [
+        {    
             "city": "Lodz",
-            "voivodeship": "Łódź",
             "weather": "https://www.accuweather.com/en/pl/%C5%82%C3%B3d%C5%BA/274340/weather-forecast/274340",
             "image": "lodz.jpg"
         }
+    ]
     }
 }
