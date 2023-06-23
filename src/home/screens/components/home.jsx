@@ -1,16 +1,13 @@
-import React from "react";
 import { useHistory } from "react-router-dom";
-
 import styles from "../home.module.css";
 import weatherData from "../../voivodeships.json";
 
 function Home() {
   const history = useHistory();
 
-  const handleReadMore = (path) => {
-    console.log('start handling')
-    history.push(path);
-    console.log("end handling");
+  const handleReadMore = () => {
+    history.push('./cities')
+    window.location.reload(false);
   };
 
   return (
@@ -18,9 +15,7 @@ function Home() {
       <div className={styles.homeContainer}>
         <ul className={styles.homeNavbar}>
           <li>
-            <button onClick={() => handleReadMore("/home")}>
-              Home
-            </button>
+            <button onClick={() => handleReadMore("/home")}>Home</button>
           </li>
         </ul>
       </div>
@@ -39,7 +34,7 @@ function Home() {
               <h2>{cities.voivodeship}</h2>
               <button
                 className={styles.buttonVoivodeships}
-                onClick={() => handleReadMore("/cities")}
+                onClick={() => handleReadMore()}
               >
                 read more
               </button>
