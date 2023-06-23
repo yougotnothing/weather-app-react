@@ -7,10 +7,9 @@ import weatherData from "../../voivodeships.json";
 function Home() {
   const history = useHistory();
 
-  const handleReadMore = (path) => {
-    console.log('start handling')
-    history.push(path);
-    console.log("end handling");
+  const handleReadMore = () => {
+    history.push("./cities");
+    window.location.reload(false);
   };
 
   return (
@@ -39,8 +38,7 @@ function Home() {
               <h2>{cities.voivodeship}</h2>
               <button
                 className={styles.buttonVoivodeships}
-                onClick={() => handleReadMore("/cities")}
-              >
+                onClick={() => handleReadMore("/cities")}>
                 read more
               </button>
             </div>
